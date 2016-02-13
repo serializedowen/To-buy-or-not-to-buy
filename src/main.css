@@ -10,3 +10,27 @@ td.th {
     font-weight: bold;
     vertical-align: top;
 }
+
+table {
+    border-spacing: 0;
+}
+
+input.price {
+    width: 45px;
+    float: none;
+    text-align: right;
+    margin-bottom: 2px;
+}
+ 
+.watchEmail {
+    float: left;
+    padding: 3px 0 0 4px;
+    font-size: 12px;
+}
+
+#legend {
+    background: #fff;
+    font-size: 11px;
+    white-space: nowrap;
+    position: relative;
+}
