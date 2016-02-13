@@ -11,6 +11,10 @@ td.th {
     vertical-align: top;
 }
 
+td {
+	font-weight: bold;
+}
+
 table {
     border-spacing: 0;
 }
@@ -22,10 +26,11 @@ input.price {
     margin-bottom: 2px;
 }
  
-.watchEmail {
+.email {
     float: left;
-    padding: 3px 0 0 4px;
+    padding: -2 0 0 4px;
     font-size: 12px;
+    margin-right: 10px;
 }
 
 #legend {
@@ -33,4 +38,15 @@ input.price {
     font-size: 11px;
     white-space: nowrap;
     position: relative;
+}
+
+#create_price {
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+#emailPrice {
+    width: 160px;
+    height: 14px;
+    font-size: 12px;
 }

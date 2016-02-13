@@ -25,42 +25,42 @@
                 <div id="legend">
                     <form id="priceForm">
                         <div id="FormErrors" style="display:none;">
-                            <div id="FormNumberError" style="display:none;" data-i18n="t_please_enter_a_valid_number"></div>
-                            <div id="FormPriceError" style="display:none;" data-i18n="t_please_enter_a_watch_price_below_the_current_price"></div>
-                            <div id="FormEmailError" style="display:none;" data-i18n="t_please_enter_your_email_address"></div>
+                            <div id="FormNumberError" style="display:none;">Plesase enter a valid number.</div>
+                            <div id="FormPriceError" style="display:none;">Please enter a price below the current price.</div>
+                            <div id="FormEmailError" style="display:none;">Please enter your email address.</div>
                         </div>
-                        <img src="loading.gif" id="legend_throbber" alt="loading" style="visibility:hidden;" />
+                        <img src="loading.gif" style="visibility:hidden;" />
                         <table>
                             <thead>
                                 <tr>
                                     <th style="padding-left: 2px;">
-                                        <span data-i18n="t_price_type">Price Type</span>
+                                        <span>Store Type</span>
                                     </th>
-                                    <th data-i18n="t_lowest">Lowest</th>
-                                    <th data-i18n="t_highest">Highest</th>
-                                    <th data-i18n="t_current">Current</th>
-                                    <th data-i18n="t_desired">Desired</th>
+                                    <th>Lowest</th>
+                                    <th>Highest</th>
+                                    <th>Current</th>
+                                    <th>Desired</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr id="legend_price_amazon">
-                                    <td>Amazon</td>
-                                    <td id="price_amazon_low"></td>
-                                    <td id="price_amazon_high"></td>
-                                    <td id="price_amazon_current"></td>
+                                    <td style="padding-left: 2px;">Amazon</td>
+                                    <td id="price_amazon_low">$10</td>
+                                    <td id="price_amazon_high">$30</td>
+                                    <td id="price_amazon_current">$20</td>
                                     <td class='desired'>
                                         <span>$</span>
                                         <input class="price" type="text" name="price_amazon" value="" tabindex="1" />
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td colspan="5" style="padding-right:0;">
-                                        <div class="watchEmail" style="display:none;">
-                                            <span data-i18n="t_email_address"></span> &nbsp;
-                                            <input type="text" name="email" id="emailPriceWatch" value="" tabindex="5">
+                                    <td colspan="5" style="padding-left:-2px;">
+                                        <div class="email">
+                                            <span>Email Address:</span>
+                                            <input type="text" name="email" id="emailPrice" value="" tabindex="5">
                                         </div>
-                                        <div id="watchNote" style="display:none;" data-i18n="t_enter_your_desired_prices_we_ll_notify_when_they_a"></div>
-                                        <input type="submit" data-i18n-attr-value="t_create_price_watches" id="create_price_watches" />
+                                        <div>
+                                            <input type="submit" id="create_price" value="Create" />
                                         </div>
                                     </td>
                                 </tr>
