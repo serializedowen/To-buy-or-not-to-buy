@@ -1,0 +1,21 @@
+{
+  "manifest_version": 2,
+  "name": "To-Buy-Or-Not-To-Buy",
+  "description": "Test Extension",
+  "version": "1.0",
+  "background": {
+    "scripts": ["popup.js"],
+    "persistent": false
+  },
+  
+  "page_action": {
+	"default_title": "__MSG_pageActionTitle__",
+    "default_icon": "icon-96.png",
+	"default_popup": "popup.html"
+  },
+
+  "permissions": [
+  	"tabs",
+  	"declarativeContent"
+  ]
+}

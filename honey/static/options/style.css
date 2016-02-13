@@ -1,0 +1,288 @@
+.chrome-bootstrap {
+  font-family: 'Noto Sans UI', 'Segoe UI', 'Chrome Droid Sans', 'Droid Sans Fallback', 'Lucida Grande', 'Tahoma', sans-serif;
+  font-size: 12px;
+  color: #303942;
+  cursor: default;
+  margin: 0;
+
+}
+.chrome-bootstrap a {
+  border: none;
+  color: #15C;
+  cursor: pointer;
+  text-decoration: underline;
+  font-weight: normal;
+}
+.chrome-bootstrap a:hover,
+.chrome-bootstrap a:focus {
+  outline: none;
+}
+.chrome-bootstrap ul,
+.chrome-bootstrap ol {
+  padding: 0;
+}
+.chrome-bootstrap li {
+  list-style-type: none;
+}
+.chrome-bootstrap button {
+  cursor: pointer;
+}
+.chrome-bootstrap h1,
+.chrome-bootstrap h2,
+.chrome-bootstrap h3,
+.chrome-bootstrap h4 {
+  -webkit-user-select: none;
+  font-weight: normal;
+  line-height: 1;
+}
+.chrome-bootstrap h1 small,
+.chrome-bootstrap h2 small,
+.chrome-bootstrap h3 small,
+.chrome-bootstrap h4 small {
+  font-size: 15px;
+  margin: 0 10px;
+  color: #53637D;
+}
+.chrome-bootstrap h1 {
+  -webkit-margin-after: 1em;
+  -webkit-margin-before: 21px;
+  -webkit-margin-start: 23px;
+  height: 18px;
+  font-size: 18px;
+}
+.chrome-bootstrap h1 a {
+  color: #5C6166;
+  text-decoration: none;
+}
+.chrome-bootstrap h3 {
+  color: black;
+  font-size: 1.2em;
+  margin-bottom: 0.8em;
+}
+.chrome-bootstrap h4 {
+  font-size: 1em;
+  margin-bottom: 5px;
+}
+.chrome-bootstrap .frame .navigation {
+  height: 100%;
+  -webkit-margin-start: 0;
+  position: fixed;
+  -webkit-margin-end: 15px;
+  width: 155px;
+  z-index: 3;
+}
+.chrome-bootstrap .frame .view,
+.chrome-bootstrap .frame .content {
+  width: 738px;
+  overflow-x: hidden;
+}
+.chrome-bootstrap .frame .content {
+  padding-top: 55px;
+}
+.chrome-bootstrap .frame .content p {
+  text-align: justify;
+}
+.chrome-bootstrap .frame .view {
+  -webkit-margin-start: 155px;
+}
+.chrome-bootstrap .frame .view a {
+  font: inherit;
+}
+.chrome-bootstrap .frame .mainview > * {
+  -webkit-margin-start: -20px;
+  -webkit-transition: margin 100ms, opacity 100ms;
+  opacity: 0;
+  z-index: 0;
+  position: absolute;
+  top: 0;
+  display: block;
+}
+.chrome-bootstrap .frame .mainview > .selected {
+  -webkit-margin-start: 0;
+  -webkit-transition: margin 200ms, opacity 200ms;
+  -webkit-transition-delay: 100ms;
+  z-index: 1;
+  opacity: 1;
+}
+.chrome-bootstrap header {
+  position: fixed;
+  background-image: -webkit-linear-gradient(#ffffff, #ffffff 40%, rgba(255, 255, 255, 0.92));
+  width: 738px;
+  z-index: 2;
+}
+.chrome-bootstrap header h1 {
+  padding: 21px 0 13px;
+  margin: 0;
+  border-bottom: 1px solid #EEE;
+}
+.chrome-bootstrap header .corner {
+  position: absolute;
+  right: 0px;
+  top: 21px;
+}
+.chrome-bootstrap header .corner input[type="text"] {
+  width: 210px;
+}
+.chrome-bootstrap header .corner.cancelable .delete {
+  opacity: 1;
+  top: 4px;
+  right: 5px;
+}
+.chrome-bootstrap section {
+  -webkit-padding-start: 18px;
+  margin-bottom: 24px;
+  margin-top: 8px;
+  max-width: 600px;
+}
+.chrome-bootstrap section h3 {
+  -webkit-margin-start: -18px;
+}
+.chrome-bootstrap section .row {
+  display: block;
+  margin: 0.65em 0;
+}
+.chrome-bootstrap .controls {
+  -webkit-padding-end: 3px;
+  -webkit-padding-start: 4px;
+  -webkit-transition: padding 100ms, height 100ms, opacity 100ms;
+  border-bottom: 1px solid #EEE;
+  display: -webkit-box;
+  overflow: hidden;
+  padding: 13px 0;
+  position: relative;
+}
+.chrome-bootstrap .controls .text {
+  display: inline-block;
+  margin-top: 4px;
+}
+.chrome-bootstrap .controls .spacer {
+  -webkit-box-flex: 1;
+}
+.chrome-bootstrap ul.menu {
+  -webkit-margin-before: 1em;
+  -webkit-margin-after: 2em;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+  -webkit-padding-start: 40px;
+  list-style-type: none;
+  padding: 0;
+}
+.chrome-bootstrap ul.menu li {
+  -webkit-border-start: 6px solid transparent;
+  -webkit-padding-start: 18px;
+  -webkit-user-select: none;
+  display: list-item;
+  text-align: -webkit-match-parent;
+}
+.chrome-bootstrap ul.menu li.selected {
+  -webkit-border-start-color: #4e5764;
+}
+.chrome-bootstrap ul.menu li.selected a {
+  color: #464E5A;
+}
+.chrome-bootstrap ul.menu li a {
+  border: 0;
+  color: #999;
+  cursor: pointer;
+  font: inherit;
+  line-height: 29px;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  display: block;
+}
+.chrome-bootstrap select,
+.chrome-bootstrap input[type='checkbox'],
+.chrome-bootstrap input[type='radio'],
+.chrome-bootstrap input[type='button'],
+.chrome-bootstrap button {
+  -webkit-appearance: none;
+  -webkit-user-select: none;
+  background-image: -webkit-linear-gradient(#ededed, #ededed 38%, #dedede);
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  border-radius: 2px;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.08), inset 0 1px 2px rgba(255, 255, 255, 0.75);
+  color: #444;
+  font: inherit;
+  margin: 0 1px 0 0;
+  text-shadow: 0 1px 0 #F0F0F0;
+}
+.chrome-bootstrap button.small {
+  padding: 1px 5px 2px;
+  min-height: 1em;
+}
+.chrome-bootstrap input[type='checkbox']:checked::before {
+  -webkit-user-select: none;
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAALCAYAAACprHcmAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wDBhYcG79aGIsAAACbSURBVBjTjdFBCkFhFAXgj4fp24PBy0SZ2ICRXRgYGb2xlKzBSEo2YgsiKWVoZgFKMjD5X/2Ux6lb99bpnNO5lKMR5i8MsEQHkhJiEzlS9HCqfiFWMUIt3AfsC3KKLCL30Qr7HfM4Ro4h6rhiEqmusIMKuphGqo+ogSPGcbYLzh91vdkXSHDDBk+0gxussS3rNcMCs+D6E18/9gLPPhbDshfzLgAAAABJRU5ErkJggg==");
+  background-size: 100% 100%;
+  content: '';
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+.chrome-bootstrap html[dir='rtl'] input[type='checkbox']:checked::before {
+  -webkit-transform: scaleX(-1);
+}
+.chrome-bootstrap input[type='checkbox'] {
+  bottom: 2px;
+  height: 13px;
+  position: relative;
+  vertical-align: middle;
+  width: 13px;
+}
+.chrome-bootstrap button {
+  -webkit-padding-end: 10px;
+  -webkit-padding-start: 10px;
+  min-height: 2em;
+  min-width: 4em;
+}
+.chrome-bootstrap .radio,
+.chrome-bootstrap .checkbox {
+  margin: 0.65em 0;
+}
+.chrome-bootstrap select:focus,
+.chrome-bootstrap input[type='checkbox']:focus,
+.chrome-bootstrap input[type='password']:focus,
+.chrome-bootstrap input[type='radio']:focus,
+.chrome-bootstrap input[type='search']:focus,
+.chrome-bootstrap input[type='text']:focus,
+.chrome-bootstrap input[type='number']:focus,
+.chrome-bootstrap button:focus {
+  /* OVERRIDE */
+
+  -webkit-transition: border-color 200ms;
+  /* We use border color because it follows the border radius (unlike outline).
+       * This is particularly noticeable on mac. */
+
+  border-color: #4d90fe;
+  outline: none;
+}
+.chrome-bootstrap button:disabled,
+.chrome-bootstrap select:disabled {
+  background-image: -webkit-linear-gradient(#f1f1f1, #f1f1f1 38%, #e6e6e6);
+  border-color: rgba(80, 80, 80, 0.2);
+  box-shadow: 0 1px 0 rgba(80, 80, 80, 0.08), inset 0 1px 2px rgba(255, 255, 255, 0.75);
+  color: #aaa;
+  cursor: default;
+}
+.chrome-bootstrap input[type='checkbox']:disabled,
+.chrome-bootstrap input[type='radio']:disabled {
+  opacity: .75;
+}
+.chrome-bootstrap select:hover:enabled,
+.chrome-bootstrap input[type='checkbox']:hover:enabled,
+.chrome-bootstrap input[type='radio']:hover:enabled,
+.chrome-bootstrap button:hover:enabled {
+  background-image: -webkit-linear-gradient(#f0f0f0, #f0f0f0 38%, #e0e0e0);
+  border-color: rgba(0, 0, 0, 0.3);
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.12), inset 0 1px 2px rgba(255, 255, 255, 0.95);
+  color: black;
+}
+.chrome-bootstrap select:active:enabled,
+.chrome-bootstrap input[type='checkbox']:active:enabled,
+.chrome-bootstrap input[type='radio']:active:enabled,
+.chrome-bootstrap button:active:enabled {
+  background-image: -webkit-linear-gradient(#e7e7e7, #e7e7e7 38%, #d7d7d7);
+  box-shadow: none;
+  text-shadow: none;
+}
