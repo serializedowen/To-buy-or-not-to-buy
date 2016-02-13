@@ -7,15 +7,14 @@
     "scripts": ["background.js"],
     "persistent": false
   },
-  
-  "page_action": {
-	"default_title": "__MSG_pageActionTitle__",
-    "default_icon": "icon-96.png",
-	"default_popup": "popup.html"
-  },
 
+  "page_action": {
+        "default_title": "Think Twice",
+        "default_icon": "icon.png",
+        "default_popup": "main.html"
+    },
+    
   "permissions": [
-  	"tabs",
-  	"declarativeContent"
+    "activeTab"
   ]
 }

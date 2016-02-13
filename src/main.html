@@ -1,0 +1,70 @@
+<!doctype html>
+<!--
+ This page is shown when the extension button is clicked, because the
+ "browser_action" field in manifest.json contains the "default_popup" key with
+ value "popup.html".
+ -->
+<html>
+  <head>
+    <title>Think Twice!</title>
+    <link rel="stylesheet" type="text/css" href="main.css" />
+    <script src="popup.js"></script>
+  </head>
+  <body>
+    <div id="score">
+    </div>
+    <div id="detailed_score">
+    </div>
+    
+    <div id="ThinkTwiceDisplayChart">
+                <img id="Chart" alt="" />
+                <div id="legend">
+                    <form id="priceForm">
+                        <div id="FormErrors" style="display:none;">
+                            <div id="FormNumberError" style="display:none;" data-i18n="t_please_enter_a_valid_number"></div>
+                            <div id="FormPriceError" style="display:none;" data-i18n="t_please_enter_a_watch_price_below_the_current_price"></div>
+                            <div id="FormEmailError" style="display:none;" data-i18n="t_please_enter_your_email_address"></div>
+                        </div>
+                        <img src="loading.gif" id="legend_throbber" alt="loading" style="visibility:hidden;" />
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th style="padding-left: 2px;">
+                                        <span data-i18n="t_price_type">Price Type</span>
+                                    </th>
+                                    <th data-i18n="t_lowest">Lowest</th>
+                                    <th data-i18n="t_highest">Highest</th>
+                                    <th data-i18n="t_current">Current</th>
+                                    <th data-i18n="t_desired">Desired</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr id="legend_price_amazon">
+                                    <td>Amazon</td>
+                                    <td id="price_amazon_low"></td>
+                                    <td id="price_amazon_high"></td>
+                                    <td id="price_amazon_current"></td>
+                                    <td class='desired'>
+                                        <span class="currency_symbol"></span>
+                                        <input class="price" type="text" name="price_amazon" value="" tabindex="1" />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="5" style="padding-right:0;">
+                                        <div class="watchEmail" style="display:none;">
+                                            <span data-i18n="t_email_address"></span> &nbsp;
+                                            <input type="text" name="email" id="emailPriceWatch" value="" tabindex="5">
+                                        </div>
+                                        <div id="watchNote" style="display:none;" data-i18n="t_enter_your_desired_prices_we_ll_notify_when_they_a"></div>
+                                        <input type="submit" data-i18n-attr-value="t_create_price_watches" id="create_price_watches" />
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </form>
+                </div>
+    </div>
+  </body>
+</html>
+
