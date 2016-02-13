@@ -10,7 +10,7 @@
 
   "page_action": {
         "default_title": "Think Twice",
-        "default_icon": "icon.png",
+        "default_icon": "icon-96.png",
         "default_popup": "main.html"
     },
     
