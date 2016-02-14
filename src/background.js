@@ -2,7 +2,7 @@
 var rule = {
   conditions: [
     new chrome.declarativeContent.PageStateMatcher({
-      pageUrl: { urlContains: 'amazon' },
+      pageUrl: { urlMatches: '.*\.amazon\..*\/[A-Z0-9]{10}?\/.*' },
     })
 
           // new chrome.declarativeContent.PageStateMatcher({

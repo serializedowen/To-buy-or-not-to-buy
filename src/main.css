@@ -19,6 +19,12 @@ table {
     border-spacing: 0;
 }
 
+
+.col-centered{
+    float: none;
+    margin: 0 auto;
+}
+
 input.price {
     width: 45px;
     float: none;
