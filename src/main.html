@@ -10,67 +10,94 @@
     <link rel="stylesheet" type="text/css" href="main.css" />
 
     <script src='popup.js'></script>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="../Chart.js/Chart.js"></script>
   </head>
-  <body onload="document.getElementById('aaaaaaa').innerHTML('aaaa');">
-    <div>
-        <textbox id="aaaaaaa"></textbox>
-        <button id="testb">Click me</button>
-        <canvas id="myChart" width="100" height="200"></canvas>
-    </div>
-    <div id="score">
-    </div>
-    <div id="detailed_score">
-    </div>
-    
-    <div id="ThinkTwiceDisplayChart">
-                <img id="Chart" alt="" />
-                <div id="legend">
-                    <form id="priceForm">
-                        <div id="FormErrors" style="display:none;">
-                            <div id="FormNumberError" style="display:none;" data-i18n="t_please_enter_a_valid_number"></div>
-                            <div id="FormPriceError" style="display:none;" data-i18n="t_please_enter_a_watch_price_below_the_current_price"></div>
-                            <div id="FormEmailError" style="display:none;" data-i18n="t_please_enter_your_email_address"></div>
-                        </div>
-                        <img src="loading.gif" id="legend_throbber" alt="loading" style="visibility:hidden;" />
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th style="padding-left: 2px;">
-                                        <span data-i18n="t_price_type">Price Type</span>
-                                    </th>
-                                    <th data-i18n="t_lowest">Lowest</th>
-                                    <th data-i18n="t_highest">Highest</th>
-                                    <th data-i18n="t_current">Current</th>
-                                    <th data-i18n="t_desired">Desired</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr id="legend_price_amazon">
-                                    <td>Amazon</td>
-                                    <td id="price_amazon_low"></td>
-                                    <td id="price_amazon_high"></td>
-                                    <td id="price_amazon_current"></td>
-                                    <td class='desired'>
-                                        <span class="currency_symbol"></span>
-                                        <input class="price" type="text" name="price_amazon" value="" tabindex="1" />
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td colspan="5" style="padding-right:0;">
-                                        <div class="watchEmail" style="display:none;">
-                                            <span data-i18n="t_email_address"></span> &nbsp;
-                                            <input type="text" name="email" id="emailPriceWatch" value="" tabindex="5">
-                                        </div>
-                                        <div id="watchNote" style="display:none;" data-i18n="t_enter_your_desired_prices_we_ll_notify_when_they_a"></div>
-                                        <input type="submit" data-i18n-attr-value="t_create_price_watches" id="create_price_watches" />
-                                        </div>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </form>
+
+  <body>
+    <div id="think" style="display:block;" class="container">
+    <div class="tab-content">
+        <div id="home" class="tab-pane fade in active">
+
+            <div class="row">
+                <!-- <canvas id="myChart" width="100" height="200"></canvas> -->
+                <img src="ThumbDown.jpg" width="200" height="200"/>
+                <p>ata</p>
+            </div>
+            <div class="row">
+                <!-- <canvas id="myChart" width="100" height="200"></canvas> -->
+                <img src="plot.jpeg" width="450" height="300"/>
+            </div>            
+            <div id="score">
+            </div>
+            <div id="detailed_score">
+            </div>
+            <div id="legend">
+                <form id="priceForm">
+                    <div id="formErrors" style="display:none;">
+                        <div id="formNumberError" style="display:none;">Plesase enter a valid number.</div>
+                        <div id="formPriceError" style="display:none;">Please enter a price below the current price.</div>
+                        <div id="formEmailError" style="display:none;">Please enter your email address.</div>
+                    </div>
+                    <img src="loading.gif" style="visibility:hidden;" />
+                    <table>
+                        <thead>
+                        <tr>
+                            <th style="padding-left: 2px;">
+                                <span>Store Type</span>
+                            </th>
+                            <th>Lowest</th>
+                            <th>Highest</th>
+                            <th>Current</th>
+                            <th>Desired</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr id="legend_price_amazon">
+                            <td style="padding-left: 2px;">Amazon</td>
+                            <td id="price_amazon_low">$224.27</td>
+                            <td id="price_amazon_high">$978.34</td>
+                            <td id="price_amazon_current">$224.27</td>
+                            <td class='desired'>
+                                <span>$</span>
+                                <input class="price" type="text" name="price_amazon" value="" tabindex="1" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="5" style="padding-left:-2px;">
+                                <div class="email">
+                                    <span>Email Address:</span>
+                                    <input type="text" name="email" id="emailPrice" value="" tabindex="5">
+                                </div>
+                                <div>
+                                    <input type="submit" id="create_price" value="Create" onClick="JavaScript:handleClick()"/>
+                                </div>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </form>
                 </div>
+        </div>
+        <div id="recommend" class="tab-pane fade">
+            <p>We suggest you to take a look at the similar products below. You may find them attractive.
+            <div>
+            <a href="http://www.amazon.ca/Samsung-SAMG920FBKEU-Unlocked-Smartphone-Packaging/dp/B00U8KSUIG/ref=sr_1_1?s=electronics&ie=UTF8&qid=1455416213&sr=1-1&keywords=samsung+galaxy+s6"><img src="galaxy-s6.jpg" width="100" height="100"></a> Galaxy-s6 from Samsung
+            <a href="http://www.amazon.ca/Motorola-NEXUS-X1103-32GB-Blue/dp/B00V57GEHA/ref=sr_1_2?s=electronics&ie=UTF8&qid=1455416122&sr=1-2&keywords=nexus"><img src="nexus-x1103.jpg" width="100" height="100"></a> Nexus-X1103 from Motorola
+            </div>
+            </p>
+        </div>
+    </div>
+    <div id="footer" style="width: 300px;">
+        <ul class="nav nav-tabs">
+          <li id="thinklink" class="active"><a data-toggle="tab" href="#home">Think</a></li>
+          <li id="recommendlink"><a data-toggle="tab" href="#recommend">Recommend</a></li>
+        </ul>
+    </div>
     </div>
   </body>
+
 </html>
 

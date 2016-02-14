@@ -10,3 +10,90 @@ td.th {
     font-weight: bold;
     vertical-align: top;
 }
+
+td {
+	font-weight: bold;
+}
+
+table {
+    border-spacing: 0;
+}
+
+input.price {
+    width: 45px;
+    float: none;
+    text-align: right;
+    margin-bottom: 2px;
+}
+ 
+.email {
+    float: left;
+    padding: -2 0 0 4px;
+    font-size: 12px;
+    margin-right: 15px;
+}
+
+#legend {
+    background: #fff;
+    font-size: 11px;
+    white-space: nowrap;
+    position: relative;
+}
+
+#create_price {
+	padding-left: 3px;
+	padding-right: 3px;
+}
+
+#emailPrice {
+    width: 160px;
+    height: 14px;
+    font-size: 12px;
+}
+
+.block {
+	display: block;
+}
+
+.hide {
+	display: none;
+}
+
+#footer .active {
+	background-color: #ddd;
+}
+
+#footer ul {
+    margin-top:5px;
+    font-size: inherit;
+    float: none;
+    bottom: 6px;
+    width: 100%;
+    padding: 0 0 0 7px;
+    border-top: 1px solid #ccc;
+    overflow: visible;
+}
+
+#footer li {
+    list-style: none;
+    float: left;
+    border: 1px solid #ccc;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-top: 0;
+    margin: 0 5px;
+    background-color: #fff;
+}
+
+#footer li a:link,
+#footer li a:active,
+#footer li a:visited {
+    text-decoration: none;
+    color: #333;
+    padding: 4px 8px;
+    display: block;
+}
+
+#footer li a:hover {
+	background-color: #eee;
+}
