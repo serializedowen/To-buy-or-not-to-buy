@@ -12,6 +12,7 @@
     <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.min.js'></script>
   </head>
   <body>
+    <div id="think" style="display:block;">
     <div>
         <canvas id="myChart" width="200" height="300"></canvas>
     </div> 
@@ -24,10 +25,10 @@
                 <img id="Chart" alt="" />
                 <div id="legend">
                     <form id="priceForm">
-                        <div id="FormErrors" style="display:none;">
-                            <div id="FormNumberError" style="display:none;">Plesase enter a valid number.</div>
-                            <div id="FormPriceError" style="display:none;">Please enter a price below the current price.</div>
-                            <div id="FormEmailError" style="display:none;">Please enter your email address.</div>
+                        <div id="formErrors" style="display:none;">
+                            <div id="formNumberError" style="display:none;">Plesase enter a valid number.</div>
+                            <div id="formPriceError" style="display:none;">Please enter a price below the current price.</div>
+                            <div id="formEmailError" style="display:none;">Please enter your email address.</div>
                         </div>
                         <img src="loading.gif" style="visibility:hidden;" />
                         <table>
@@ -60,7 +61,7 @@
                                             <input type="text" name="email" id="emailPrice" value="" tabindex="5">
                                         </div>
                                         <div>
-                                            <input type="submit" id="create_price" value="Create" />
+                                            <input type="submit" id="create_price" value="Create" onClick="JavaScript:handleClick()"/>
                                         </div>
                                     </td>
                                 </tr>
@@ -69,6 +70,25 @@
                     </form>
                 </div>
     </div>
+    </div>
+    <div id="recommend" style="display:none;">
+        <p>We suggust you to take a look at the similar products below. You may find them attractive.
+        <div>
+        <a href="http://www.amazon.ca/Samsung-SAMG920FBKEU-Unlocked-Smartphone-Packaging/dp/B00U8KSUIG/ref=sr_1_1?s=electronics&ie=UTF8&qid=1455416213&sr=1-1&keywords=samsung+galaxy+s6"><img src="/galaxy-s6.jpg"/ width="100" height="100"></a> Galaxy-s6 from Samsung
+        <a href="http://www.amazon.ca/Motorola-NEXUS-X1103-32GB-Blue/dp/B00V57GEHA/ref=sr_1_2?s=electronics&ie=UTF8&qid=1455416122&sr=1-2&keywords=nexus"><img src="/nexus-x1103.jpg" width="100" height="100"></a> Nexus-X1103 from Motorola
+        </div>
+        </p>
+    </div>
+    <div id="footer" style="width: 300px;">
+    <ul>
+      <li id="thinklink" class="active">
+        <a href="#">Think</a>
+      </li>
+      <li id="recommendlink">
+        <a href="#">Recommend</a>
+      </li>
+    </ul>
+  </div>
   </body>
 </html>
 
