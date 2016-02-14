@@ -4,9 +4,14 @@
   "description": "Test Extension",
   "version": "1.0",
   "background": {
-    "scripts": ["background.js"],
+    "scripts": [
+	    "background.js"
+    ],
     "persistent": false
   },
+
+  "content_security_policy": "script-src 'self'; object-src 'self'; unsafe-inline",
+
 
   "page_action": {
         "default_title": "Think Twice",
@@ -14,6 +19,13 @@
         "default_popup": "main.html"
     },
     
+  // "content_scripts": [
+  //   {
+  //     "matches": ["http://*.amazon.*"],
+  //     "js": ["content_script.js"]
+  //   }
+  // ],
+
   "permissions": [
   	"tabs",
   	"declarativeContent",
